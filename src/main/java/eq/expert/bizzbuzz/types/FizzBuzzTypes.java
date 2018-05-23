@@ -9,6 +9,7 @@ public enum FizzBuzzTypes {
     FIZZ("fizz"),
     BUZZ("buzz"),
     LUCKY("lucky"),
+    INTEGER("integer"),
     EMPTY(""),
     SPACE(" ");
 
