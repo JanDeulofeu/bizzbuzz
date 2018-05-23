@@ -13,19 +13,19 @@ public class ExecutorTest {
     @ParameterizedTest
     @CsvSource({
             "-1 , -1, '-1 integer: 1'",
-            "0 , 0, 'fizzbuzz fizzbuzz: 1'",
-            "1 , 1, '1 integer: 1'       ",
-            "2 , 2, '2 integer: 1'       ",
-            "3 , 3, 'lucky lucky: 1'   ",
-            "4 , 4, '4 integer: 1'       ",
-            "5 , 5, 'buzz buzz: 1'    ",
-            "6 , 6, 'fizz fizz: 1'    ",
-            "7 , 7, '7 integer: 1'       ",
-            "8 , 8, '8 integer: 1'       ",
-            "9 , 9, 'fizz fizz: 1'    ",
-            "10, 10, 'buzz buzz: 1'   ",
-            "15, 15, 'fizzbuzz fizzbuzz: 1'",
-            "30, 30, 'lucky lucky: 1'",
+            "0 , 0, 'fizzbuzz fizzbuzz: 1'  ",
+            "1 , 1, '1 integer: 1'          ",
+            "2 , 2, '2 integer: 1'          ",
+            "3 , 3, 'lucky lucky: 1'        ",
+            "4 , 4, '4 integer: 1'          ",
+            "5 , 5, 'buzz buzz: 1'          ",
+            "6 , 6, 'fizz fizz: 1'          ",
+            "7 , 7, '7 integer: 1'          ",
+            "8 , 8, '8 integer: 1'          ",
+            "9 , 9, 'fizz fizz: 1'          ",
+            "10, 10, 'buzz buzz: 1'         ",
+            "15, 15, 'fizzbuzz fizzbuzz: 1' ",
+            "30, 30, 'lucky lucky: 1'       ",
     })
     public void validateFizzBuzzCalculationReturnsExpectedValuesForRangesOfZero(final Integer from, final Integer to, final String expected) {
 

@@ -27,8 +27,6 @@ public class FizzBuzzExecutor {
         return bizzbuzzList.stream().collect(Collectors.joining(SPACE.value())).concat(SPACE.value()).concat(report);
     }
 
-
-
     /**
      * Validate order input parameters and nullability.
      *
@@ -43,7 +41,6 @@ public class FizzBuzzExecutor {
         }
     }
 
-
     /**
      * Generate a report counting the number of bizzbuzz elemets on a given response.
      * @param bizzbuzzList
@@ -55,7 +52,6 @@ public class FizzBuzzExecutor {
                 .map(k -> String.format("%s: %s", k.getKey(), k.getValue()))
                 .collect(Collectors.joining(SPACE.value()));
     }
-
 
     /**
      * Generate a bizzbuzz list of values for a given numeric input range.
