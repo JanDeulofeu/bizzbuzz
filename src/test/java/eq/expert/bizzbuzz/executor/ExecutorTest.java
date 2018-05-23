@@ -12,6 +12,7 @@ public class ExecutorTest {
 
     @ParameterizedTest
     @CsvSource({
+            "-1 , 0, '-1 fizzbuzz integer: 1 fizzbuzz: 1'",
             "-1 , -1, '-1 integer: 1'",
             "0 , 0, 'fizzbuzz fizzbuzz: 1'  ",
             "1 , 1, '1 integer: 1'          ",
@@ -35,6 +36,8 @@ public class ExecutorTest {
     @ParameterizedTest
     @CsvSource({
 
+            "-1,      0, '-1 fizzbuzz integer: 1 fizzbuzz: 1'",
+            "-1,     -1, '-1 integer: 1'",
             "-1,     20, '-1 fizzbuzz 1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz lucky: 2 integer: 11 fizz: 4 fizzbuzz: 2 buzz: 3'",
             "0,      20, 'fizzbuzz 1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz lucky: 2 integer: 10 fizz: 4 fizzbuzz: 2 buzz: 3'",
             "0,       0, 'fizzbuzz fizzbuzz: 1'",
