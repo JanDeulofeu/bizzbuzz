@@ -24,12 +24,14 @@ public class FizzBuzzExecutor {
 
         final String report = getReportFromGivenListOfResults(bizzbuzzList);
 
-        return bizzbuzzList.stream().collect(Collectors.joining(SPACE.value())).concat(SPACE.value()).concat(report);
+        return bizzbuzzList.stream()
+                .collect(Collectors.joining(SPACE.value()))
+                .concat(SPACE.value())
+                .concat(report);
     }
 
     /**
      * Validate order input parameters and nullability.
-     *
      * @param from
      * @param to
      */
