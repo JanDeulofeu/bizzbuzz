@@ -1,6 +1,6 @@
-package eq.expert.bizzbuzz;
+package eq.expert.bizzbuzz.service;
 
-import eq.expert.bizzbuzz.exceptions.FixxBuzzParamException;
+import eq.expert.bizzbuzz.exceptions.FizzBuzzParamException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 
-public class FizzBuzzTest {
+public class FizzBuzzServiceTest {
 
     @ParameterizedTest
     @CsvSource({
@@ -30,15 +30,16 @@ public class FizzBuzzTest {
     })
     public void validateFizzBuzzCalculationReturnsExpectedValues(final int number, final String expected) {
 
-        assertThat(FizzBuzz.evaluate(number)).isEqualTo(expected);
+        assertThat(FizzBuzzService.evaluate(number)).isEqualTo(expected);
     }
 
 
     @Test
     public void validateExceptionIsThrownOnNullParameter()
     {
-        assertThatThrownBy(() -> FizzBuzz.evaluate(null))
-                .isInstanceOf(FixxBuzzParamException.class)
+        assertThatThrownBy(() -> FizzBuzzService.evaluate(null))
+                .isInstanceOf(FizzBuzzParamException.class)
                 .hasMessage("Input parameter is Null");
     }
+
 }
