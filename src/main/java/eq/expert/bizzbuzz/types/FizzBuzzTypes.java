@@ -2,7 +2,7 @@ package eq.expert.bizzbuzz.types;
 
 
 /**
- * Possible output tags to generate a BizzBuzz output.
+ * Possible output tags to generate a FizzBuzz output.
  */
 public enum FizzBuzzTypes {
 

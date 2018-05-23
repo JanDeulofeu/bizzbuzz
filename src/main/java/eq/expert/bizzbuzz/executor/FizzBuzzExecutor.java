@@ -16,7 +16,7 @@ public class FizzBuzzExecutor {
 
     public static String generate(final Integer from, final Integer to) {
 
-      validateInputParameters(from, to);
+        validateInputParameters(from, to);
 
         return IntStream.rangeClosed(from, to)
                 .mapToObj(FizzBuzzService::evaluate)
@@ -25,11 +25,11 @@ public class FizzBuzzExecutor {
 
     /**
      * Validate order input parameters and nullability.
+     *
      * @param from
      * @param to
      */
-    private static void validateInputParameters(final Integer from, final Integer to)
-    {
+    private static void validateInputParameters(final Integer from, final Integer to) {
         if (to == null || from == null) {
             throw new FizzBuzzParamException("Input parameter is Null");
         } else if (to < from) {
