@@ -35,7 +35,7 @@ public class ExecutorTest {
     @ParameterizedTest
     @CsvSource({
 
-            "-1,      20, '-1 fizzbuzz 1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz'",
+            "-1,     20, '-1 fizzbuzz 1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz'",
             "0,      20, 'fizzbuzz 1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz'",
             "0,       0, 'fizzbuzz'",
             "0,       1, 'fizzbuzz 1'",
