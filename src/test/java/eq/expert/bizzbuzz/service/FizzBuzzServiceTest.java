@@ -41,5 +41,4 @@ public class FizzBuzzServiceTest {
                 .isInstanceOf(FizzBuzzParamException.class)
                 .hasMessage("Input parameter is Null");
     }
-
 }
