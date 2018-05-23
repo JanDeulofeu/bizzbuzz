@@ -25,6 +25,7 @@ public class FizzBuzzServiceTest {
             "8 , '8'       ",
             "9 , 'fizz'    ",
             "10, 'buzz'    ",
+            "13, 'lucky'    ",
             "15, 'fizzbuzz'",
             "30, 'lucky'",
             "33, 'lucky'",
