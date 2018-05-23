@@ -17,7 +17,7 @@ public class FizzBuzzServiceTest {
             "0 , 'fizzbuzz'",
             "1 , '1'       ",
             "2 , '2'       ",
-            "3 , 'fizz'    ",
+            "3 , 'lucky'    ",
             "4 , '4'       ",
             "5 , 'buzz'    ",
             "6 , 'fizz'    ",
@@ -26,7 +26,8 @@ public class FizzBuzzServiceTest {
             "9 , 'fizz'    ",
             "10, 'buzz'    ",
             "15, 'fizzbuzz'",
-            "30, 'fizzbuzz'",
+            "30, 'lucky'",
+            "33, 'lucky'",
     })
     public void validateFizzBuzzCalculationReturnsExpectedValues(final int number, final String expected) {
 

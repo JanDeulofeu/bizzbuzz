@@ -8,21 +8,26 @@ import static eq.expert.bizzbuzz.types.FizzBuzzTypes.*;
 
 /**
  * Generation of a String given the module of an input:
- *
- *  input: module % 3   output: fizz
- *  input: module % 5   output: buzz
- *  input: module % 15  output: fizzbuzz
- *
- *  Throws an FizzBuzzParamException if the input parameter is null.
+ * <p>
+ * input: module % 3   output: fizz
+ * input: module % 5   output: buzz
+ * input: module % 15  output: fizzbuzz
+ * input: 3            output: lucky
+ * <p>
+ * Throws an FizzBuzzParamException if the input parameter is null.
  */
 public class FizzBuzzService {
 
+    private final static String LUCKY_NUMBER = "3";
 
     public static String evaluate(final Integer value) {
 
         try {
             String result = EMPTY.value();
 
+            if (String.valueOf(value).contains(LUCKY_NUMBER)) {
+                return LUCKY.value();
+            }
             result += module(3).test(value) ? FIZZ.value() : EMPTY.value();
             result += module(5).test(value) ? BUZZ.value() : EMPTY.value();
 
@@ -35,6 +40,7 @@ public class FizzBuzzService {
 
     /**
      * Calculation of the module for a given number.
+     *
      * @param value
      * @return predicate
      */

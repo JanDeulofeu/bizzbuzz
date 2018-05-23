@@ -16,16 +16,16 @@ public class ExecutorTest {
             "0 , 0, 'fizzbuzz'",
             "1 , 1, '1'       ",
             "2 , 2, '2'       ",
-            "3 , 3, 'fizz'    ",
+            "3 , 3, 'lucky'   ",
             "4 , 4, '4'       ",
             "5 , 5, 'buzz'    ",
             "6 , 6, 'fizz'    ",
             "7 , 7, '7'       ",
             "8 , 8, '8'       ",
             "9 , 9, 'fizz'    ",
-            "10, 10, 'buzz'    ",
+            "10, 10, 'buzz'   ",
             "15, 15, 'fizzbuzz'",
-            "30, 30, 'fizzbuzz'",
+            "30, 30, 'lucky'",
     })
     public void validateFizzBuzzCalculationReturnsExpectedValuesForRangesOfZero(final Integer from, final Integer to, final String expected) {
 
@@ -35,12 +35,14 @@ public class ExecutorTest {
     @ParameterizedTest
     @CsvSource({
 
-            "0,      20, 'fizzbuzz 1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz'",
+            "0,      20, 'fizzbuzz 1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz'",
             "0,       0, 'fizzbuzz'",
             "0,       1, 'fizzbuzz 1'",
-            "1,      10, '1 2 fizz 4 buzz fizz 7 8 fizz buzz'",
-            "1,      20, '1 2 fizz 4 buzz fizz 7 8 fizz buzz 11 fizz 13 14 fizzbuzz 16 17 fizz 19 buzz'",
-            "20,     30, 'buzz fizz 22 23 fizz buzz 26 fizz 28 29 fizzbuzz'",
+            "0,       3, 'fizzbuzz 1 2 lucky'",
+            "3,       3, 'lucky'",
+            "1,      10, '1 2 lucky 4 buzz fizz 7 8 fizz buzz'",
+            "1,      20, '1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz'",
+            "20,     30, 'buzz fizz 22 lucky fizz buzz 26 fizz 28 29 lucky'",
             "1000, 1001, 'buzz 1001'",
     })
     public void validateFizzBuzzCalculationReturnsExpectedValuesForDifferentRanges(final Integer from, final Integer to, final String expected) {
