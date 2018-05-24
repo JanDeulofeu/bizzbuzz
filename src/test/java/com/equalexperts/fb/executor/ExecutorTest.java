@@ -1,6 +1,6 @@
-package eq.expert.bizzbuzz.executor;
+package com.equalexperts.fb.executor;
 
-import eq.expert.bizzbuzz.exceptions.FizzBuzzParamException;
+import com.equalexperts.fb.exceptions.FizzBuzzParamException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

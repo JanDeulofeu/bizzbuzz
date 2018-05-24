@@ -1,10 +1,9 @@
-package eq.expert.bizzbuzz.service;
+package com.equalexperts.fb.service;
 
-import eq.expert.bizzbuzz.exceptions.FizzBuzzParamException;
+import com.equalexperts.fb.exceptions.FizzBuzzParamException;
+import com.equalexperts.fb.types.FizzBuzzTypes;
 
 import java.util.function.IntPredicate;
-
-import static eq.expert.bizzbuzz.types.FizzBuzzTypes.*;
 
 /**
  * Generation of a String given the module of an input:
@@ -23,13 +22,13 @@ public class FizzBuzzService {
     public static String evaluate(final Integer value) {
 
         try {
-            String result = EMPTY.value();
+            String result = FizzBuzzTypes.EMPTY.value();
 
             if (String.valueOf(value).contains(LUCKY_NUMBER)) {
-                return LUCKY.value();
+                return FizzBuzzTypes.LUCKY.value();
             }
-            result += module(3).test(value) ? FIZZ.value() : EMPTY.value();
-            result += module(5).test(value) ? BUZZ.value() : EMPTY.value();
+            result += module(3).test(value) ? FizzBuzzTypes.FIZZ.value() : FizzBuzzTypes.EMPTY.value();
+            result += module(5).test(value) ? FizzBuzzTypes.BUZZ.value() : FizzBuzzTypes.EMPTY.value();
 
             return result.isEmpty() ? String.valueOf(value) : result;
 
