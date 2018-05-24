@@ -1,12 +1,12 @@
-package eq.expert.bizzbuzz.executor;
+package com.equalexperts.fb.executor;
 
-import eq.expert.bizzbuzz.exceptions.FizzBuzzParamException;
-import eq.expert.bizzbuzz.service.FizzBuzzService;
+import com.equalexperts.fb.exceptions.FizzBuzzParamException;
+import com.equalexperts.fb.service.FizzBuzzService;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static eq.expert.bizzbuzz.types.FizzBuzzTypes.SPACE;
+import static com.equalexperts.fb.types.FizzBuzzTypes.SPACE;
 
 /**
  * Generation of a concatenated output String with bizzbuzz possibles outputs for a given numeric inout range.

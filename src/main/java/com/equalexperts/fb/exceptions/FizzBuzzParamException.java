@@ -1,4 +1,4 @@
-package eq.expert.bizzbuzz.exceptions;
+package com.equalexperts.fb.exceptions;
 
 /**
  * FizzBuzzException to manage exceptions associated with input params

@@ -1,4 +1,4 @@
-package eq.expert.bizzbuzz.types;
+package com.equalexperts.fb.types;
 
 
 /**
