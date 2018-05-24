@@ -1,10 +1,10 @@
-package eq.expert.bizzbuzz.service;
+package com.equalexperts.fb.service;
 
-import eq.expert.bizzbuzz.exceptions.FizzBuzzParamException;
+import com.equalexperts.fb.exceptions.FizzBuzzParamException;
 
 import java.util.function.IntPredicate;
 
-import static eq.expert.bizzbuzz.types.FizzBuzzTypes.*;
+import static com.equalexperts.fb.types.FizzBuzzTypes.*;
 
 /**
  * Generation of a String given the module of an input:
